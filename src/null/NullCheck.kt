@@ -14,8 +14,10 @@ fun main() {
 
     println("$nameLength, $surnameLength, $surnameLengthDefault")
 
-    val listOfNullableInt: List<Int?> = listOf<Int?>(2, null, 5)
+    val listOfNullableInt: List<Int?> = listOf(2, null, 5)
     val nullableList: List<Int>? = null //listOf(2, 5)
     println("L: ${listOfNullableInt.size} LN: ${nullableList?.size ?: 0}")
 
+    surname!! //if null npe, if not further acts as non-nullable
+    println(surname.length)
 }
