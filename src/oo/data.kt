@@ -23,4 +23,8 @@ fun main() {
     println(tenRs1 === tenRs2) //false
     println(tenRs1 === tenRs1) //true
 
+    val tenRs3 = tenRs1.copy();
+    val tenDollar3 = tenRs1.copy(currency = Currency.DOLLAR);
+    println(tenRs3)
+    println(tenDollar3)
 }
