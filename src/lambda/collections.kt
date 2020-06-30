@@ -32,6 +32,9 @@ fun main() {
 
     val characters = students.map { it.name }
             .map { it.split("") }
+            //these are inline library functions as extensions
+            //create new collections on each functions
+            //eager
             .flatMap { it }
             .map { it.toUpperCase() }
             .filter { it.isNotEmpty() }
