@@ -8,6 +8,7 @@ enum class Color {
  RED, GREEN, YELLOW
 }
 
+//when for switch
 fun representation(color: Color): String = when(color) {
     RED -> "ERROR"
     GREEN -> "SUCCESS"
@@ -26,6 +27,7 @@ fun talk(animal: Animal) = when(animal) {
     else -> "Huuman"
 }
 
+//Returning and assigning Pair
 fun multi(color: Color): String {
     val (name, size) = when(color) {
         RED -> RED.name to RED.ordinal

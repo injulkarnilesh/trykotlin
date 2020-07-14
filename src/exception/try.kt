@@ -1,6 +1,5 @@
 package exception
 
-import extension.camelCase
 import java.io.IOException
 import java.lang.NumberFormatException
 

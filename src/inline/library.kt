@@ -16,10 +16,11 @@ fun main() {
 
     val str1: String? = ran.takeIf(String::isNotEmpty)
     val str2: String? = ran.takeIf {it.length > 5}
-    println("$str1, $str2")
+    println("$str1, $str2") //Ran, null
 
     ran.takeUnless { it.length > 5 }
         ?.let { println("unless > 5 $it") }
+    //unless > 5 Ran with chaining
 
-    repeat(10) { println("Repeating $it")}
+    repeat(10) { println("Repeating $it")} //0..9
 }

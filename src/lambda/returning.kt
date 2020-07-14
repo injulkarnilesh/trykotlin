@@ -38,14 +38,14 @@ fun returningFunLabelNamed(list: List<Int>): Int {
 
 fun main() {
     println("returningFun")
-    println(returningFun(listOf(1, 2, 3)))
-    println(returningFun(listOf(1, 0, 3)))
+    println(returningFun(listOf(1, 2, 3))) //0
+    println(returningFun(listOf(1, 0, 3))) //-1
 
     println("returningFunLabel")
-    println(returningFunLabel(listOf(1, 2, 3)))
-    println(returningFunLabel(listOf(1, 0, 3)))
+    println(returningFunLabel(listOf(1, 2, 3))) //0
+    println(returningFunLabel(listOf(1, 0, 3)))  //0
 
     println("returningFunLabelNamed")
-    println(returningFunLabelNamed(listOf(1, 2, 3)))
-    println(returningFunLabelNamed(listOf(1, 0, 3)))
+    println(returningFunLabelNamed(listOf(1, 2, 3))) //0
+    println(returningFunLabelNamed(listOf(1, 0, 3))) //0
 }

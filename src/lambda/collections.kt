@@ -25,6 +25,7 @@ fun main() {
     val age40Student = students.firstOrNull { it.age == 40 }
     //first throws NoSuchElement Exception
     println(age40Student)
+    //null
 
     val diversity = students.filterIndexed { _, st -> st.gender == Gender.FEMALE }
             .mapIndexed() { i, st -> "${st.name} at $i" }
@@ -40,5 +41,6 @@ fun main() {
             .filter { it.isNotEmpty() }
             .distinct()
     println(characters)
+    //[N, I, L, E, S, H, A, R, O, T, M]
 
 }

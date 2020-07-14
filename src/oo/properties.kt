@@ -42,18 +42,30 @@ fun main() {
     val someOne = Person("Nilesh", 23)
     someOne.age = 33   //setter would be called
     println("Hey ${someOne.name}(${someOne.age})") //getters would be called
+    //Hey Nilesh(33)
 
-    val st = Student()
+    val st = Student() //for race init Getting Name Unknown
     println("Name ${st.name}")
+    //Getting Name Unknown
+    //Name Unknown
+
     st.name = "Nilesh"
+    //Setting Name Unknown = Nilesh
+
     println("Name after ${st.name}")
+    //Getting Name Nilesh
+    //Name after Nilesh
 
     println("${someOne.race}/${st.name}")
+    //Getting Name Nilesh
+    //Person/Nilesh
 
     println("Nilesh".lambi)
+    //5
 
     val sb = StringBuilder("Kotlin%")
     sb.shevat = '!'
     println("${sb}/${sb.shevat}")
+    //Kotlin!/!
 
 }

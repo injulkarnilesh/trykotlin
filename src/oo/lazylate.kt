@@ -18,7 +18,10 @@ class Personal() {
 
 fun main() {
     println(lazyMe)
+    //Intitalisng LazyMe
+    //LazyIsOk
     println(lazyMe)
+    //LazyIsOk
 
     val personal = Personal()
     //Throws UninitializedPropertyAccessException

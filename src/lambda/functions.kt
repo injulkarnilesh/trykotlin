@@ -36,5 +36,5 @@ fun main() {
     val olderWithPredicate = agePredicate(60)
 
     println("$isHimOlder / $isHimOlder2 / $isHerOlder / $isHerOlder2 / $olderWithPredicate")
-
+    //false / false / true / true / true
 }

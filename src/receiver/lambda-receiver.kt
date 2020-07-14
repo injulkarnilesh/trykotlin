@@ -2,7 +2,7 @@ package receiver
 
 fun str(builder: StringBuilder.() -> Unit): String {
     val s = StringBuilder()
-    s.builder()
+    s.builder()  //builder.call(s) in js
     return s.toString()
 }
 
@@ -17,13 +17,13 @@ fun main() {
         }
         output = toString()
     }
-    println(output)
+    println(output) //Hiabcd
 
     val name = str{
         append("Nilesh")
         append(" ")
         append("Injulkar")
     }
-    println(name)
+    println(name) //Nilesh Injulkar
 
 }

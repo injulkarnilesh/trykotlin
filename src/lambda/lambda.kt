@@ -18,7 +18,9 @@ fun waiting(millis: Long, job: () -> Unit) {
 var anyNumber: () -> Int = { 43 }
 
 val num: (Int) -> Int? =  { if (it % 2 == 0) it else null }
+//lambda returning nullable Int
 val numb: (() -> Int)? =  if (isEven.invoke(12)) anyNumber  else null
+//nullable lambda
 
 fun main() {
     val evens = listOf("1", "2", "3", "4", "5", "6")

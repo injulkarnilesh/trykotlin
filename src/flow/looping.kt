@@ -69,10 +69,10 @@ fun stringIn(from: String, to: String, value: String): Boolean {
 //= value in from..to
 
 fun main() {
-    forRange()
-    forRangeUntil()
-    forRangeBackwards()
-    forSteps()
+    forRange()  //0123456789
+    forRangeUntil()  //012345678
+    forRangeBackwards() //987654321
+    forSteps()  //13579
 
     forList(listOf("superman", "batman", "captain"))
     forMap(mapOf(1 to "One", 2 to "Two", 3 to "Three"))
@@ -87,7 +87,9 @@ fun main() {
 
 
     println(stringIn("dog", "fox", "elephant"))
+    //e is in d..f => true using compareTo
     println(stringIn("dog", "fox", "cat"))
+    //c not is in d..f => false using compareTo
 
     println("String comparison ${"abc" < "pqr"}")
     //"abc".compareTo("pqr") < 0

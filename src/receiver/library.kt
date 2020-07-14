@@ -12,12 +12,12 @@ fun main() {
         append("Updated")
         //whatever returned from here will be returned from run
     }
-    println(sb.toString())
+    println(sb.toString())  //StrUpdated
 
     val applied = sb?.apply {
         append(" Applied")
         //no returning, this is returned in apply
     }
-    println(applied.toString())
+    println(applied.toString()) //StrUpdated
 
 }
